@@ -1,0 +1,514 @@
+/* Basic CSS */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-logo: K2D, sans-serif;
+    --font-body: Lato, Poppins;
+}
+
+ body,
+ header{
+    background: rgba(24, 24, 25, 1);
+    border-bottom: 1px solid rgba(35, 35, 35, 0.7);
+}
+
+main .container{
+    position: relative;
+    font-family: var(--font-body);
+}
+
+h2, p, a{
+    color: rgba(250, 251, 223, 0.8);
+    text-decoration: none;
+}
+
+.btn{
+    transition: 0.35s;
+}
+
+.btn:hover{
+    background: rgb(248, 121, 17);
+}
+
+
+/* Header Section */
+header{
+    z-index: 999;
+}
+
+header .container .navbar-brand{
+    font-family:var(--font-logo);
+    font-size: 40px;
+    background: -webkit-linear-gradient(45deg, rgba(96, 11, 254, 0.9), rgba(31, 202, 249, 0.9));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+}
+
+header .container .navbar-nav .nav-item a{
+    font-family: var(--font-body);
+    transition: 0.35s;
+    font-size: 18px;
+}
+
+header .container .navbar-nav .nav-item a:hover{
+    color: rgb(248, 121, 17);
+}
+
+
+/* Hero Section */
+main .hero-section .left-box{
+    width:fit-content;
+    position: relative;
+    margin-top: 45%;
+}
+
+main .hero-section  .left-box h1{
+    font-size: 64px;
+    font-weight: 700;
+    background: -webkit-linear-gradient(0deg, #2743fa, #9b75f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main .hero-section  .left-box .text-box p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+main .hero-section  .left-box .social-link a{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    transition: 0.35s;
+}
+
+main .hero-section  .left-box .social-link a:hover{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(250, 251, 223, 0.8);
+    color: rgb(248, 121, 17);
+    text-decoration: none;
+}
+
+main .hero-section  .left-box .my-buttons .hire-me{
+    background-color: rgba(27, 102, 252, 1); 
+    color: rgba(250, 251, 223, 0.8);
+}
+
+main .hero-section  .left-box .my-buttons .hire-me:hover{
+    background-color: rgb(248, 121, 17);
+    color: rgba(250, 251, 223, 0.8);
+}
+
+.my-buttons .dload-cv{
+    color:rgba(250, 251, 223, 0.8);
+}
+
+.my-buttons .dload-cv:hover{
+    background: rgb(248, 121, 17);
+    color:rgba(250, 251, 223, 0.8);
+}
+
+main .hero-section .img-box{
+    position: relative;
+    width: 90%;
+    margin-top: 35%;
+    opacity: .9;
+}
+
+
+/* Service Section */
+main .service-section{
+    margin-top: 15%;
+}
+
+.service-section .card-row{
+    width: 80%;
+}
+
+.service-section .heading-box h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.service-section .heading-box p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.service-section .card{
+    height: auto;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+    background: rgba(4, 4, 6, 0.504);
+    color: rgba(250, 251, 223, 0.8);
+    padding: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.service-section .card:hover{
+    background: rgba(77, 68, 253, 0.504);
+    transform: scale(1.1);
+}
+
+.service-section .card p{
+    font-size: 14px;
+}
+
+.service-section .card img{
+    width: 40px;
+    margin: 0 auto;
+}
+
+.service-section .card-row .card i{
+    font-size: 40px;
+    color: rgba(27, 102, 252, 1);  
+}
+
+/* About me Section */
+main .about-me-section{
+    margin-top: 15%;
+}
+main .about-me-section .body-row .text-box{
+    width: 90%;
+    max-height: 450px;
+    margin: 0 auto;
+}
+
+main .about-me-section .body-row img{
+    margin: 0 auto;
+    width: auto;
+    max-height: 400px;
+    background: rgba(28, 28, 30, 0.6);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+main .about-me-section .heading-box h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+main .about-me-section .heading-box p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/* Portfolio Section */
+main .portfolio-section{
+    margin-top: 10%;
+}
+
+.portfolio-section .heading-box h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.portfolio-section .heading-box p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.portfolio-section .card-row{
+    width: 80%;
+}
+
+.portfolio-section .card-row .card{
+    width: fit-content;
+    height: auto;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+    background: rgba(6, 10, 11, 0.8);
+    color: rgba(250, 251, 223, 0.8);
+    padding: 10px;
+    transition: transform 0.35s ease-in-out;
+}
+
+.portfolio-section .card-row .card:hover{
+    transform: scale(1.1);
+}
+
+
+/* Contact Section */
+.contact-section{
+    margin-top: 15%;
+}
+
+.contact-section .contact-row{
+    width: 90%;
+    margin: 5% auto;
+    font-size: 18px;
+}
+
+.contact-section .heading-box h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.contact-section .heading-box p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.contact-row .left-text{
+    position: relative;
+}
+
+.contact-row .right-text{
+    position: relative;
+}
+
+.contact-row .left-text label,
+.contact-row .left-text input{
+    color: rgba(250, 251, 223, 0.8);
+    position: relative;
+    width: 35vw;
+    line-height: 35px;
+    padding-left: 1vw;
+}
+
+.contact-row .right-text label,
+.contact-row .right-text input{
+    color: rgba(250, 251, 223, 0.8);
+    width: 35vw;
+    line-height: 35px;
+    padding-left: 1vw;
+}
+
+.contact-row .right-text select{
+    width: 35vw;
+    height: 2.5vw;
+    padding-left: 1vw;
+    font-size: 16px;
+}
+
+.contact-row .right-text textarea{
+    width: 35vw;
+    line-height: 5vw;
+    padding-left: 1vw;
+}
+
+
+/* Footer Section */
+footer{
+    border-top: 1px solid rgba(34, 33, 33, 0.7);
+}
+
+footer .footer-section{
+    padding: 5vw 0 1vw 0;
+    line-height: 3vw;
+}
+
+footer .footer-section .page-link{
+    position: relative;
+    gap: 4vw;
+    transition: 0.35s;
+}
+footer .footer-section .page-link a:hover{
+    color: rgb(248, 121, 17);
+}
+
+footer .footer-section .social-link{
+    position: relative;
+    gap: 2vw;
+    margin-top: 4vw;
+}
+footer .footer-section .social-link a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3vw;
+    height: 3vw;
+    background: rgba(34, 33, 33, 0.9);
+    border-radius: 50%;
+    transition: 0.35s;
+}
+
+footer .footer-section .social-link a:hover{
+    background: rgba(250, 251, 223, 0.8);
+    color: rgb(248, 121, 17);
+}
+
+footer .footer-section p{
+    margin: 3vw 0 0 0;
+}
+
+
+/* Media queries */
+@media(768px <= width < 992px){
+
+    /* footer section */
+    footer .footer-section{
+        padding: 6vw 0 2vw 0;
+        line-height: 4vw;
+    }
+    
+    footer .footer-section .page-link{
+        position: relative;
+        gap: 4vw;
+        transition: 0.35s;
+    }
+   
+    footer .footer-section .social-link{
+        position: relative;
+        gap: 4vw;
+        margin-top: 4vw;
+    }
+    footer .footer-section .social-link a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 5vw;
+        height: 5vw;
+        background: rgba(34, 33, 33, 0.9);
+        border-radius: 50%;
+        transition: 0.35s;
+    }
+    
+    footer .footer-section .social-link a:hover{
+        background: rgba(250, 251, 223, 0.8);
+        color: rgb(248, 121, 17);
+    }
+
+    footer .footer-section p{
+        margin-top: 4vw;
+    }
+}
+
+@media(width<768px){
+
+    /* header section */
+    .navbar-nav{
+        background: rgb(31, 34, 33);
+        z-index: 999;
+    }
+
+    header .container .navbar-nav .nav-item:hover{
+        background: rgba(250, 251, 223, 0.8);
+    }
+
+    /* hero section */
+    .hero-section .col-12{
+        margin: 0% auto !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-section .left-box{
+        text-align: center;
+        margin-top: 30% !important;
+    }
+
+    .hero-section .img-box{
+        margin-top: -200px;
+        margin: 5% auto !important;
+    }
+
+    .hero-section .left-box .social-link,
+    .hero-section .left-box .my-buttons{
+        justify-content: center;
+    }
+
+    .hero-section .text-box h1{
+        font-size: 40px !important;
+    }
+
+    /* service section */
+    .service-section .card-row{
+        width: 100%;
+    }
+
+    .service-section .service-heading h2{
+        font-size: 30px;
+    }
+    
+    .service-section .service-heading p{
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .service-section .card{
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .service-section .card h4{
+        font-size: 20px;
+    }
+
+    /* about me section */
+    main .about-me-section .body-row .text-col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* contact section */
+    .contact-section .contact-row{
+        width: 90vw;
+        padding: 0px;
+    }
+
+    .contact-row .left-text,
+    .contact-row .right-text{
+        position: relative;
+        margin-left: 0px !important;
+        width: 85vw;
+        margin: 3vw auto;
+    }
+
+    .contact-row .left-text label,
+    .contact-row .left-text input{
+        width: 85vw;
+        line-height: 10vw;
+    }
+
+    .contact-row .right-text label,
+    .contact-row .right-text input{
+        width: 85vw;
+        line-height: 10vw;
+    }
+
+    .contact-row .right-text select{
+        width: 85vw;
+        height: 10vw;
+    }
+
+    .contact-row .right-text textarea{
+        width: 85vw;
+        line-height: 10vw;
+    }
+
+    /* footer section */
+    footer .footer-section{
+        padding: 7vw 0 2vw 0;
+        line-height: 6vw;
+    } 
+
+    footer .footer-section .social-link{
+        position: relative;
+        gap: 7vw;
+        margin: 4vw 0;
+    }
+
+    footer .footer-section .social-link a{
+        width: 8vw;
+        height: 8vw;
+        padding: 6vw;
+        background: rgba(35, 34, 34, 0.9);
+    }
+
+    footer p{
+        margin-top: 10vw;
+    }
+}
